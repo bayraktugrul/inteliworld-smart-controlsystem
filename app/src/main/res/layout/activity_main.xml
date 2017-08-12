@@ -14,4 +14,47 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
         android:text="num1" />
+
+    <Button
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/num1"
+        android:layout_alignRight="@+id/num1"
+        android:layout_below="@+id/num1"
+        android:text="NUM2" />
+
+    <Button
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num2"
+        android:layout_alignStart="@+id/num2"
+        android:layout_below="@+id/num2"
+        android:text="NUM3" />
+
+    <Button
+        android:id="@+id/num4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num3"
+        android:layout_centerHorizontal="true"
+        android:text="NUM4" />
+
+    <Button
+        android:id="@+id/num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num4"
+        android:layout_centerHorizontal="true"
+        android:text="NUM5" />
+
+    <Button
+        android:id="@+id/num6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/num5"
+        android:layout_alignStart="@+id/num5"
+        android:layout_below="@+id/num5"
+        android:text="Num6" />
 </RelativeLayout>
