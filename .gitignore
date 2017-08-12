@@ -77,6 +77,9 @@ gen-external-apklibs
 
 # Log Files
 
+#Firebase
+app/google-services.json
+
 # Android Studio
 /*/build/
 /*/local.properties
