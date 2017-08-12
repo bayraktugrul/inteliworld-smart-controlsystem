@@ -4,57 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#191919"
     tools:context="com.smartcontrolsystem.inteliworld.MainActivity">
 
-    <Button
-        android:id="@+id/num1"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:text="num1" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/num2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/num1"
-        android:layout_alignRight="@+id/num1"
-        android:layout_below="@+id/num1"
-        android:text="NUM2" />
+        <Button
+            android:id="@+id/num1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="num1" />
 
-    <Button
-        android:id="@+id/num3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/num2"
-        android:layout_alignStart="@+id/num2"
-        android:layout_below="@+id/num2"
-        android:text="NUM3" />
+        <Button
+            android:id="@+id/num2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/num1"
+            android:layout_alignRight="@+id/num1"
+            android:layout_below="@+id/num1"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="NUM2" />
 
-    <Button
-        android:id="@+id/num4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/num3"
-        android:layout_centerHorizontal="true"
-        android:text="NUM4" />
+        <Button
+            android:id="@+id/num3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/num2"
+            android:layout_alignStart="@+id/num2"
+            android:layout_below="@+id/num2"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="NUM3" />
 
-    <Button
-        android:id="@+id/num5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/num4"
-        android:layout_centerHorizontal="true"
-        android:text="NUM5" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/num6"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/num5"
-        android:layout_alignStart="@+id/num5"
-        android:layout_below="@+id/num5"
-        android:text="Num6" />
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/num5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/num4"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:text="NUM5" />
+
+        <Button
+            android:id="@+id/num4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/num3"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button"
+            android:text="NUM4" />
+
+        <Button
+            android:id="@+id/num6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/num5"
+            android:layout_alignStart="@+id/num5"
+            android:layout_below="@+id/num5"
+            android:background="@drawable/button"
+            android:text="Num6" />
+    </LinearLayout>
+
 </RelativeLayout>

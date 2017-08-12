@@ -19,12 +19,12 @@ public class MainActivity extends AppCompatActivity {
 
     private Button num1, num2, num3, num4, num5, num6;
     private Firebase mRef;
-    private boolean num1Bool =true;
-    private boolean num2Bool =true;
-    private boolean num3Bool =true;
-    private boolean num4Bool =true;
-    private boolean num5Bool =true;
-    private boolean num6Bool =true;
+    private boolean num1Bool;
+    private boolean num2Bool;
+    private boolean num3Bool;
+    private boolean num4Bool;
+    private boolean num5Bool;
+    private boolean num6Bool;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,52 +108,52 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Map<String, Boolean> map = dataSnapshot.getValue(Map.class);
 
-                Boolean num1Value = map.get("num1");
-                if(num1Value == true){
-                    num1.setBackgroundColor(Color.GREEN);
+                num1Bool = map.get("num1");
+                if(num1Bool == true){
+                    num1.setBackgroundResource(R.drawable.button_active);
                 }
-                else if(num1Value == false){
-                    num1.setBackgroundColor(Color.RED);
-                }
-
-                Boolean num2Value = map.get("num2");
-                if(num2Value == true){
-                    num2.setBackgroundColor(Color.GREEN);
-                }
-                else if(num2Value == false){
-                    num2.setBackgroundColor(Color.RED);
+                else if(num1Bool == false){
+                    num1.setBackgroundResource(R.drawable.button);
                 }
 
-                Boolean num3Value = map.get("num3");
-                if(num3Value == true){
-                    num3.setBackgroundColor(Color.GREEN);
+                num2Bool= map.get("num2");
+                if(num2Bool == true){
+                    num2.setBackgroundResource(R.drawable.button_active);
                 }
-                else if(num3Value == false){
-                    num3.setBackgroundColor(Color.RED);
-                }
-
-                Boolean num4Value = map.get("num4");
-                if(num4Value == true){
-                    num4.setBackgroundColor(Color.GREEN);
-                }
-                else if(num4Value == false){
-                    num4.setBackgroundColor(Color.RED);
+                else if(num2Bool == false){
+                    num2.setBackgroundResource(R.drawable.button);
                 }
 
-                Boolean num5Value = map.get("num5");
-                if(num5Value == true){
-                    num5.setBackgroundColor(Color.GREEN);
+                num3Bool = map.get("num3");
+                if(num3Bool == true){
+                    num3.setBackgroundResource(R.drawable.button_active);
                 }
-                else if(num5Value == false){
-                    num5.setBackgroundColor(Color.RED);
+                else if(num3Bool == false){
+                    num3.setBackgroundResource(R.drawable.button);
                 }
 
-                Boolean num6Value = map.get("num6");
-                if(num6Value == true){
-                    num6.setBackgroundColor(Color.GREEN);
+                num4Bool = map.get("num4");
+                if(num4Bool == true){
+                    num4.setBackgroundResource(R.drawable.button_active);
                 }
-                else if(num6Value == false){
-                    num6.setBackgroundColor(Color.RED);
+                else if(num4Bool == false){
+                    num4.setBackgroundResource(R.drawable.button);
+                }
+
+                num5Bool = map.get("num5");
+                if(num5Bool == true){
+                    num5.setBackgroundResource(R.drawable.button_active);
+                }
+                else if(num5Bool == false){
+                    num5.setBackgroundResource(R.drawable.button);
+                }
+
+                num6Bool = map.get("num6");
+                if(num6Bool == true){
+                    num6.setBackgroundResource(R.drawable.button_active);
+                }
+                else if(num6Bool == false){
+                    num6.setBackgroundResource(R.drawable.button);
                 }
 
             }
